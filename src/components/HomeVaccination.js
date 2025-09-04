@@ -74,7 +74,7 @@ export default function Home() {
 
         {/* Ratings */}
        <p className="mt-3 text-sm text-gray-600 text-center md:text-left flex items-center justify-center md:justify-start gap-2">
-  ⭐ 4.9 in <FcGoogle size={16} />  Ratings | 70,000+ Happy Pet Parents
+   4.9 ⭐ in <FcGoogle size={16} />  Ratings | 70,000+ Happy Pet Parents
 </p>
       </div>
     </section>
