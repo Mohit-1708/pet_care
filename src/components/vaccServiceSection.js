@@ -1,13 +1,14 @@
 import React from "react";
-import { Stethoscope, ShieldCheck, ClipboardList } from "lucide-react";
+import { Stethoscope, TimerReset, BadgePercent } from "lucide-react";
 import manish from "../assets/images/manish.png";
 import teamPhoto from "../assets/images/teamPhoto.png";
 import karthik from "../assets/images/vet-karthik.png";
+import rekha from "../assets/images/Rekha.png"
 
-export default function ServicesSection() {
+export default function VaccServicesSection() {
   return (
     <section className="px-8 py-16 max-w-6xl mx-auto text-center">
-      {/* Why Choose */}
+    
       <span className="bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-semibold">
         Why Choose Dr Doodley
       </span>
@@ -15,9 +16,9 @@ export default function ServicesSection() {
         <span className="text-orange-600">Hospital</span> Backed Services
       </h1>
 
-      {/* Services grid */}
+   
       <div className="grid md:grid-cols-3 gap-8 mt-10">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center ">
           <Stethoscope size={40} className="text-orange-600 mb-3" />
           <h3 className="font-semibold text-orange-600">20+ Expert Vets</h3>
           <p className="text-gray-600 text-sm">
@@ -26,16 +27,16 @@ export default function ServicesSection() {
         </div>
 
         <div className="flex flex-col items-center">
-          <ShieldCheck size={40} className="text-orange-600 mb-3" />
-          <h3 className="font-semibold text-orange-600">Advance Facilities</h3>
+          <TimerReset size={40} className="text-orange-600 mb-3" />
+          <h3 className="font-semibold text-orange-600">Same Day Visit</h3>
           <p className="text-gray-600 text-sm">
-            Equipped with X-Ray, Surgery, ICU, etc.
+            Our hospitals are equipped with x-ray, Surgery etc.
           </p>
         </div>
 
         <div className="flex flex-col items-center">
-          <ClipboardList size={40} className="text-orange-600 mb-3" />
-          <h3 className="font-semibold text-orange-600">Free Consultation</h3>
+          <BadgePercent size={40} className="text-orange-600 mb-3" />
+          <h3 className="font-semibold text-orange-600">Affordable Home Vaccinaton</h3>
           <p className="text-gray-600 text-sm">
             Guaranteed free consultation at our hospitals
           </p>
@@ -76,7 +77,7 @@ export default function ServicesSection() {
 
       </div>
 
-      {/* Experts */}
+      
       <div className="mt-20">
         <span className="bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-semibold">
           Meet Our Vet
@@ -116,8 +117,75 @@ export default function ServicesSection() {
     ))}
   </div>
 </div>
+</div>
 
+<div className="mt-20">
+  <span className="bg-orange-100 text-orange-600 px-4 py-1 rounded-full text-sm font-semibold">
+    Vaccination Plans
+  </span>
+  <h1 className="text-2xl md:text-3xl font-bold mt-3">
+    Dog and Puppy <span className="text-orange-600">Vaccination Plans</span>
+  </h1>
+
+
+  <div className="grid md:grid-cols-3 gap-6 mt-10">
+    {[...Array(6)].map((_, i) => (
+      <div
+        key={i}
+        className="border rounded-xl shadow bg-white flex flex-col w-full md:w-auto"
+      >
+        <div className="relative bg-orange-600 text-white text-left px-4 py-3 rounded-t-xl flex items-center gap-3">
+          <img
+            src={rekha}
+            alt="Puppy Vaccination"
+            className="w-14 h-14 object-cover rounded-full border-2 border-white shadow -ml-2"
+          />
+          <span className="font-semibold text-base">
+            Puppy Vaccination Schedule
+          </span>
+        </div>
+
+        
+        <div className="divide-y">
+          {[...Array(6)].map((_, j) => (
+            <div
+              key={j}
+              className="flex justify-between px-4 py-3 text-sm"
+            >
+              <span className="font-semibold text-orange-600">
+                1 yr since vaccination
+              </span>
+              <span className="text-gray-600">
+                Kennel Cough and Anti-rabies
+              </span>
+            </div>
+          ))}
+        </div>
+
+      
+        <p className="text-gray-600 text-xs px-4 py-3">
+          All repeat vaccines (Boosters) are mandatory to bolster your pup’s
+          immunity against infectious diseases. One vaccine is not enough to
+          raise a puppy’s immunity.
+        </p>
+
+       
+        <div className="flex items-center justify-between px-4 pb-4 gap-3">
+          <div className="flex items-center gap-2">
+            <span className="text-orange-600 font-bold">₹1599</span>
+            <span className="line-through text-gray-400 text-xs">₹1999</span>
+            <span className="bg-orange-100 text-orange-600 text-xs font-bold px-2 py-1 rounded">
+              20% OFF
+            </span>
+          </div>
+          <button className="border border-orange-600 text-orange-600 px-4 py-2 rounded-md font-semibold hover:bg-orange-600 hover:text-white transition text-sm">
+            BOOK NOW
+          </button>
+        </div>
       </div>
+    ))}
+  </div>
+</div>
 
       {/* FAQ */}
       <div className="mt-20">
