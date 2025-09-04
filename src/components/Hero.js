@@ -1,9 +1,8 @@
 import React from "react";
 import Icon from '@mdi/react';
 import { mdiPaw } from '@mdi/js';
-import { MapPin, Hospital, Bold } from "lucide-react";
+import { MapPin, Hospital } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
-import { Star } from "lucide-react";
 
 export default function Hero() {
   return (

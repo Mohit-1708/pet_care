@@ -1,8 +1,7 @@
-import Hero from "./Hero";
+
 import React from "react";
 import Icon from '@mdi/react';
 import { mdiPaw } from '@mdi/js';
-import { MapPin, Hospital, Bold } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
 import VaccServices from "./VaccServices";
 import VaccServicesSection from "./vaccServiceSection";
