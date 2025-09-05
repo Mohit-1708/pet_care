@@ -1,5 +1,6 @@
 import React from "react";
 import { Activity, Heart, Stethoscope, Microscope, Clock, Scissors } from "lucide-react";
+import plusIcon from "../assets/icons/Medical-Symbol.png";
 
 export default function Services() {
   const services = [
@@ -12,32 +13,40 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-6 sm:px-8">
+    <section className="bg-gray-50 py-8 px-6 sm:px-8">
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="bg-orange-600 text-white px-4 py-2 rounded-full inline-block font-semibold mb-4">
+        <h2 className="bg-[#DD7542] text-white px-4 py-1 rounded-full inline-block font-semibold mb-4">
           Our Services
         </h2>
-        <h3 className="text-3xl font-bold font-mono text-orange-600 mb-10">
-          Complete Pet Healthcare <span className="text-gray-900">Under One Roof</span>
+        <h3 className="text-3xl font-bold font-mono text-[#DD7542] mb-10">
+          Complete Pet Healthcare <span className="text-[#5C372D]">Under One Roof</span>
         </h3>
 
         <div className="grid grid-cols-2 gap-4 sm:gap-6 text-left max-w-4xl mx-auto px-4">
-  {services.map((service, i) => (
-    <div
-      key={i}
-      className="p-4 sm:p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
-    >
-      <div className="mb-3">{service.icon}</div>
-      <h4 className="text-sm sm:text-lg font-semibold text-orange-600 mb-2">
-        {service.title}
-      </h4>
-      <p className="text-gray-600 text-xs sm:text-sm">
-        Comprehensive health examinations and routine care.
-      </p>
-    </div>
-  ))}
-</div>
+          {services.map((service, i) => (
+            <div
+              key={i}
+              className="p-4 sm:p-6 bg-white rounded-xl shadow hover:shadow-lg transition"
+            >
+              {/* Mobile: show plusIcon | Desktop: show Lucide icon */}
+              <div className="mb-3">
+                <img
+                  src={plusIcon}
+                  alt="Plus Icon"
+                  className="w-8 h-8 sm:hidden"
+                />
+                <div className="hidden sm:block">{service.icon}</div>
+              </div>
 
+              <h4 className="text-sm sm:text-lg font-semibold text-[#DD7542] mb-2">
+                {service.title}
+              </h4>
+              <p className="text-[#5C372D] text-xs sm:text-sm">
+                Comprehensive health examinations and routine care.
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
