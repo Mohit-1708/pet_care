@@ -9,7 +9,7 @@ import plus from "../assets/icons/ei_plus.png";
 
 export default function ServicesSection() {
   return (
-    <section className="px-4 sm:px-6 py-16 max-w-6xl mx-auto text-center">
+    <section className="px-4 sm:px-6 py-2 max-w-6xl mx-auto text-center">
       {/* Why Choose */}
       <span className="bg-[#DD7542] text-white px-4 rounded-full text-sm font-semibold">
         Why Choose Dr Doodley
@@ -137,33 +137,37 @@ export default function ServicesSection() {
           <div className="flex gap-6 snap-x snap-mandatory scroll-smooth px-2">
             {[...Array(6)].map((_, i) => (
               <div
-                key={i}
-                className="flex-shrink-0 w-64 md:w-72 rounded-xl shadow-md bg-white overflow-hidden snap-center border"
-              >
-                {/* Doctor Image */}
-                <img
-                  src={karthik}
-                  alt="Doctor"
-                  className="w-full h-52 object-cover"
-                />
+  key={i}
+  className="flex-shrink-0 w-64 md:w-72 rounded-xl shadow-md bg-white overflow-hidden snap-center border"
+>
+  {/* Doctor Image */}
+  <img
+    src={karthik}
+    alt="Doctor"
+    className="w-full h-52 object-cover"
+  />
 
-                {/* Doctor Info */}
-                <div className="p-4 text-left">
-                  <p className="text-[#DD7542] font-semibold">Dr. Karthik</p>
-                  <p className="text-sm text-gray-600 mt-1">
-                    <span className="font-semibold text-gray-800">
-                      Experience:
-                    </span>{" "}
-                    2.5+ Years
-                  </p>
-                  <p className="text-sm text-gray-600 mt-1 leading-snug">
-                    <span className="font-semibold text-gray-800">
-                      Expertise:
-                    </span>{" "}
-                    General Physician & Soft Tissue Surgeon
-                  </p>
-                </div>
-              </div>
+  {/* Doctor Info */}
+  <div className="p-4 text-left">
+    {/* Name */}
+    <p className="text-[#DD7542] font-semibold">Dr. Karthik</p>
+
+    {/* Experience */}
+    <p className="text-sm text-gray-600 mt-1">
+      Experience:{" "}
+      <span className="font-semibold text-[#5C372D]">2.5+ Years</span>
+    </p>
+
+    {/* Expertise */}
+    <p className="text-sm text-gray-600 mt-1 leading-snug">
+      Expertise:{" "}
+      <span className="text-[#5C372D]">
+        General Physician & Soft Tissue Surgeon
+      </span>
+    </p>
+  </div>
+</div>
+
             ))}
           </div>
         </div>
@@ -172,7 +176,7 @@ export default function ServicesSection() {
      
 {/* FAQ */}
 <div className="mt-20">
-  <h1 className="text-2xl font-bold text-center text-orange-600">FAQ</h1>
+  <h1 className="text-2xl font-bold text-center text-[#DD7542]">FAQ</h1>
 
   <div className="mt-8 max-w-3xl mx-auto divide-y divide-gray-300">
     {[

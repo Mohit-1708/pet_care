@@ -60,16 +60,18 @@ export default function Locations() {
                 </h3>
 
                 {/* Buttons row */}
-                <div className="flex flex-row lg:flex-col gap-3">
- <button className="flex items-center justify-center gap-2 bg-[#DD7542] text-white px-4 py-2 rounded-md font-semibold">
-  <img src={icon} alt="Calling Icon" className="w-5 h-5" />
-  CALL NOW
-</button>
+              {/* Buttons row */}
+<div className="flex flex-row gap-3">
+  <button className="flex items-center justify-center gap-2 bg-[#DD7542] text-white px-4 py-2 rounded-md font-semibold whitespace-nowrap text-sm">
+    <img src={icon} alt="Calling Icon" className="w-5 h-5" />
+    CALL NOW
+  </button>
 
-  <button className="flex items-center justify-center gap-2 flex-1 border border-[#DD7542] text-[#DD7542] py-2 rounded-md">
+  <button className="flex items-center justify-center gap-2 border border-[#DD7542] text-[#DD7542] px-4 py-2 rounded-md font-medium whitespace-nowrap text-sm">
     <MapPin size={18} /> GET DIRECTION
   </button>
 </div>
+
 
               </div>
             </div>

@@ -6,7 +6,7 @@ import bg from "../assets/images/bg.png";
 
 export default function Footer() {
   return (
-    <footer className="border-t mt-20 bg-white relative">
+    <footer className="border-t mt-0 bg-white relative">
       {/* Background for mobile only */}
       <div
   className="absolute inset-0 bg-cover bg-no-repeat bg-center opacity-20 md:hidden"
