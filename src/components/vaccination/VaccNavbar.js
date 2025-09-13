@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import Vector from "../assets/icons/vector.svg";
-import icon from "../assets/icons/callingIcon.png";
+import Vector from "../../assets/icons/vector.svg";
+import icon from "../../assets/icons/callingIcon.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -47,7 +47,7 @@ export default function Navbar() {
         {/* Emergency Button */}
         <button className="flex items-center gap-1 sm:gap-2 bg-[#DD7542] text-white px-2 sm:px-3 md:px-4 py-2 rounded-md font-semibold text-xs sm:text-sm md:text-base whitespace-nowrap ml-auto">
           <img src={icon} alt="Calling Icon" className="w-4 h-4 sm:w-5 sm:h-5" />
-          Emergency Vet
+          Call Now
         </button>
       </div>
 

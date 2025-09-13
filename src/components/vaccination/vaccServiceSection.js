@@ -1,11 +1,12 @@
 import React from "react";
-import manish from "../assets/images/manish.png";
-import teamPhoto from "../assets/images/teamPhoto.png";
-import karthik from "../assets/images/vet-karthik.png";
-import icon1 from "../assets/icons/free.png";
-import icon2 from "../assets/icons/hospital.png";
-import icon3 from "../assets/icons/doctorst.png";
-import plus from "../assets/icons/ei_plus.png";
+import manish from "../../assets/images/manish.png";
+import teamPhoto from "../../assets/images/teamPhoto.png";
+import karthik from "../../assets/images/vet-karthik.png";
+import icon1 from "../../assets/icons/free.png";
+import icon2 from "../../assets/icons/hospital.png";
+import icon3 from "../../assets/icons/doctorst.png";
+import plus from "../../assets/icons/ei_plus.png";
+import VaccinationGrid from "./VaccinationGrid";
 
 export default function ServicesSection() {
   return (
@@ -115,7 +116,7 @@ export default function ServicesSection() {
         <span className="bg-[#DC7441] text-white px-4 py-1 rounded-full text-sm font-semibold">
           Meet Our Vet
         </span>
-        <h1 className="text-2xl sm:text-3xl md:text-xl font-bold mt-3 leading-snug text-center">
+        <h1 className="text-2xl sm:text-3xl md:text-2xl font-bold mt-3 leading-snug text-center">
   {/* First mobile line */}
   <span className="text-[#DD7542]">Team of India’s</span>
   <br className="block md:hidden" />
@@ -186,7 +187,7 @@ export default function ServicesSection() {
         </div>
       </div>
 
-     
+     <VaccinationGrid/>
 {/* FAQ */}
 <div className="mt-20">
   <h1 className="text-2xl font-bold text-center text-[#DD7542]">FAQ</h1>
